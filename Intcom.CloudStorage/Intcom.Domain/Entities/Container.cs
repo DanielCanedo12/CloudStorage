@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntCom.Infra.Data
+namespace Intcom.Domain.Entities
 {
-    public class Class1
+    class Container
     {
     }
 }
