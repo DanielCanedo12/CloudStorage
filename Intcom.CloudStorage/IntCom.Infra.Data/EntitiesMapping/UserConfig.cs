@@ -16,6 +16,9 @@ namespace Intcom.Infra.Data.EntitiesMapping
         {
             HasKey(u => u.Id);
 
+            Property(u => u.Id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+
             Property(c => c.Name)
                 .IsRequired();
 
