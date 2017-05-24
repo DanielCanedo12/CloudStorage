@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IntCom.Infra.Data.Contexts
+namespace Intcom.Infra.Data.Contexts
 {
     public class DefaultContext : DbContext
     {

@@ -48,15 +48,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\DefaultContext.cs" />
+    <Compile Include="EntitiesMapping\CompanyConfig.cs" />
+    <Compile Include="EntitiesMapping\UserConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EntitiesMapping\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Intcom.CrossCutting.IoC\Intcom.CrossCutting.IoC.csproj">
+      <Project>{d2aa5a30-6708-4149-95c1-20aec5ead03c}</Project>
+      <Name>Intcom.CrossCutting.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Intcom.Domain\Intcom.Domain.csproj">
+      <Project>{30ec1568-ab43-4bba-b9f8-fd01bc360c63}</Project>
+      <Name>Intcom.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

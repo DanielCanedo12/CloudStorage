@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infrastructure", "5 - I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - CrossCutting", "6 - CrossCutting", "{097CAB8D-D66C-4BAC-A90E-3FC17CE62078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntCom.Infra.Data", "IntCom.Infra.Data\IntCom.Infra.Data.csproj", "{04A0391F-DDE0-4160-96C1-AE79C7B394FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intcom.Infra.Data", "IntCom.Infra.Data\Intcom.Infra.Data.csproj", "{04A0391F-DDE0-4160-96C1-AE79C7B394FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntCom.MVC.Site", "IntCom.MVC.Site\IntCom.MVC.Site.csproj", "{EF96F388-7EA9-4AF9-A7A3-A62DCC0D5AF3}"
 EndProject
