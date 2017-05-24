@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Intcom.Domain.Entities;
+using Intcom.Infra.Data.EntitiesMapping;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
@@ -11,7 +13,13 @@ namespace Intcom.Infra.Data.Contexts
 {
     public class DefaultContext : DbContext
     {
+
+        public DbSet<User> Clientes { get; set; }
+        public DbSet<Company> Enderecos { get; set; }
+
+
         public DefaultContext() : 
+
             base("DefaultConnection")
         {
         }
@@ -20,10 +28,16 @@ namespace Intcom.Infra.Data.Contexts
         {
             base.OnModelCreating(modelBuilder);
 
+            modelBuilder.Configurations.Add(new UserConfig());
+            modelBuilder.Configurations.Add(new CompanyConfig());
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
+
+            modelBuilder.Properties()
+                .Where(p => p.Name == p.ReflectedType.Name + "Id")
+                .Configure(p => p.IsKey());
         }
 
 
