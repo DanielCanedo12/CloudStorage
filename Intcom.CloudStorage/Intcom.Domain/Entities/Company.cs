@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Intcom.Domain.Entities
 {
@@ -11,6 +7,7 @@ namespace Intcom.Domain.Entities
         public Company()
         {
             Users = new List<User>();
+            Files = new List<MyFile>();
         }
 
         public int Id    { get; set; }
@@ -18,5 +15,6 @@ namespace Intcom.Domain.Entities
         public long Limit { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<MyFile> Files { get; set; }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DomainValidation.Interfaces.Specification;
+﻿using DomainValidation.Interfaces.Specification;
 using Intcom.Domain.Entities;
 
 namespace Intcom.Domain.Specifications.File

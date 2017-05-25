@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IntCom.Infra.Data.Interfaces
+﻿namespace IntCom.Infra.Data.Interfaces
 {
     public interface IUnitOfWork
     {

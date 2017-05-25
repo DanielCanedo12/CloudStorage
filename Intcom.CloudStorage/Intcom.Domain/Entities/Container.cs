@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Intcom.Domain.Entities
+﻿namespace Intcom.Domain.Entities
 {
-    class Container
+    public class Container
     {
     }
 }

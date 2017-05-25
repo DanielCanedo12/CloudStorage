@@ -4,11 +4,6 @@ using IntCom.Infra.Data.Interfaces;
 using IntCom.Infra.Data.Repositories;
 using IntCom.Infra.Data.UoW;
 using SimpleInjector;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Intcom.CrossCutting.IoC
 {

@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Contexts\DefaultContext.cs" />
     <Compile Include="EntitiesMapping\CompanyConfig.cs" />
+    <Compile Include="EntitiesMapping\MyFileConfig.cs" />
     <Compile Include="EntitiesMapping\UserConfig.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Migrations\201705251348264_CriacaoBanco.cs" />

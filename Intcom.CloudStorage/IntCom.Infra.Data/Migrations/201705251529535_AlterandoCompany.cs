@@ -1,8 +1,7 @@
 namespace IntCom.Infra.Data.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class AlterandoCompany : DbMigration
     {
         public override void Up()

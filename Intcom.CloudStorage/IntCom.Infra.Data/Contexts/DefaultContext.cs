@@ -1,13 +1,10 @@
 ﻿using Intcom.Domain.Entities;
 using Intcom.Infra.Data.EntitiesMapping;
 using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using IntCom.Infra.Data.EntitiesMapping;
 
 namespace Intcom.Infra.Data.Contexts
 {
@@ -16,6 +13,7 @@ namespace Intcom.Infra.Data.Contexts
 
         public DbSet<User> Users { get; set; }
         public DbSet<Company> Companies { get; set; }
+        public DbSet<MyFile> Files { get; set; }
 
 
         public DefaultContext() : 
@@ -30,6 +28,7 @@ namespace Intcom.Infra.Data.Contexts
 
             modelBuilder.Configurations.Add(new UserConfig());
             modelBuilder.Configurations.Add(new CompanyConfig());
+            modelBuilder.Configurations.Add(new MyFileConfig());
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
@@ -42,23 +41,23 @@ namespace Intcom.Infra.Data.Contexts
                 .Configure(p => p.HasMaxLength(100));
 
             modelBuilder.Properties()
-                .Where(p => p.Name == p.ReflectedType.Name + "Id")
+                .Where(p => p.Name == "Id")
                 .Configure(p => p.IsKey());
         }
 
 
         public override int SaveChanges()
         {
-            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
+            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("RegistrationDate") != null))
             {
                 if (entry.State == EntityState.Added)
                 {
-                    entry.Property("DataCadastro").CurrentValue = DateTime.Now;
+                    entry.Property("RegistrationDate").CurrentValue = DateTime.Now;
                 }
 
                 if (entry.State == EntityState.Modified)
                 {
-                    entry.Property("DataCadastro").IsModified = false;
+                    entry.Property("RegisterDate").IsModified = false;
                 }
             }
             return base.SaveChanges();

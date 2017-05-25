@@ -1,10 +1,6 @@
 ﻿using Intcom.Infra.Data.Contexts;
 using IntCom.Infra.Data.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IntCom.Infra.Data.UoW
 {
