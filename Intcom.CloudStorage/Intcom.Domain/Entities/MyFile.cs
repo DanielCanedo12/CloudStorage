@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Intcom.Domain.Entities
 {
-    class File
+    class MyFile
     {
         public Guid Id { get; set; }
         public int ContainerId { get; set; }
         public int CompanyId { get; set; }
+        public long Length { get; set; }
         public virtual Container Container { get;  set; }
         public virtual Company Company { get; set; }
         public string Extension { get; set; }

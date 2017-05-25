@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DomainValidation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DomainValidation.1.0.0\lib\net451\DomainValidation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,13 +45,20 @@
   <ItemGroup>
     <Compile Include="Entities\Company.cs" />
     <Compile Include="Entities\Container.cs" />
-    <Compile Include="Entities\File.cs" />
+    <Compile Include="Entities\MyFile.cs" />
     <Compile Include="Interfaces\ICompanyRepository.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specifications\File\FileIsSmallerThanLimit.cs" />
+    <Compile Include="Validations\EmailValidation.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Specifications\Company\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

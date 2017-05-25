@@ -25,5 +25,7 @@ namespace IntCom.Infra.Data.Migrations
                 );
            
         }
+
+       
     }
 }

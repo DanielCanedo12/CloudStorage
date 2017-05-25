@@ -78,10 +78,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Intcom.Application\Intcom.Application.csproj">
-      <Project>{b42be97d-319f-4e11-9b27-509c38130bcd}</Project>
-      <Name>Intcom.Application</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Intcom.Domain\Intcom.Domain.csproj">
       <Project>{30ec1568-ab43-4bba-b9f8-fd01bc360c63}</Project>
       <Name>Intcom.Domain</Name>

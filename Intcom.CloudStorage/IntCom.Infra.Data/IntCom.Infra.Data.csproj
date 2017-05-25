@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201705251348264_CriacaoBanco.Designer.cs">
       <DependentUpon>201705251348264_CriacaoBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705251529535_AlterandoCompany.cs" />
+    <Compile Include="Migrations\201705251529535_AlterandoCompany.Designer.cs">
+      <DependentUpon>201705251529535_AlterandoCompany.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CompanyRepository.cs" />
@@ -76,6 +80,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201705251348264_CriacaoBanco.resx">
       <DependentUpon>201705251348264_CriacaoBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705251529535_AlterandoCompany.resx">
+      <DependentUpon>201705251529535_AlterandoCompany.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
