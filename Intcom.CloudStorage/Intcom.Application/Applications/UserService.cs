@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Intcom.Domain.Interfaces;
+﻿using Intcom.Domain.Interfaces;
 using IntCom.Infra.Data.Interfaces;
 
-namespace Intcom.Application
+namespace Intcom.Application.Applications
 {
     public class UserService : ServiceBase
     {
