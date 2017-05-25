@@ -14,13 +14,13 @@ namespace Intcom.Infra.Data.Contexts
     public class DefaultContext : DbContext
     {
 
-        public DbSet<User> Clientes { get; set; }
-        public DbSet<Company> Enderecos { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Company> Companies { get; set; }
 
 
         public DefaultContext() : 
 
-            base("DefaultConnection")
+            base("DefaultContext")
         {
         }
 
