@@ -3,9 +3,9 @@ using Intcom.Domain.Entities;
 
 namespace Intcom.Domain.Specifications.File
 {
-    class FileIsSmallerThanLimit : ISpecification<MyFile>
+    class FileIsSmallerThanLimit : ISpecification<Document>
     {
-        public bool IsSatisfiedBy(MyFile entity)
+        public bool IsSatisfiedBy(Document entity)
         {
             // Criar Constantes
             return entity.Length < 20000;

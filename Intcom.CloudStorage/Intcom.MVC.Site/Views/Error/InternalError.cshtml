@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "InternalError";
+    Layout = "~/Views/Shared/_LayoutExterno.cshtml";
+}
+
+<div class="block-center wd-xl">
+    <!-- START panel-->
+    <div class="text-center mb-xl">
+        <div class="text-lg mb-lg">500</div>
+        <p class="lead m0">Alguma coisa aconteceu seriamente errado.</p>
+        <p>Nós estamos experimentando um problema interno no servidor.<br> Por favor, tente novamente depois.</p>
+    </div>
+    <ul class="list-inline text-center text-sm mb-xl">
+        <li>
+            <a href="@Url.Action("", "")" class="text-muted">Pagina Principal</a>
+        </li>
+        <li class="text-muted">|</li>
+        <li>
+            <a href="@Url.Action("", "Login")" class="text-muted">Login</a>
+        </li>
+    </ul>
+</div>
+

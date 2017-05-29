@@ -1,0 +1,106 @@
+﻿body {
+    background: url("/Content/Images/login/bglogin.jpg") center right fixed no-repeat;
+    background-size: cover;
+}
+
+#bg {
+    background: rgba(0, 0, 0, 0.25);
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.c-checkbox span, .c-radio span {
+    background: #fff;
+}
+
+.checkbox label {
+    color: #5a5959
+}
+
+.checkbox label span {
+    color: #fff
+}
+
+.field-validation-error {
+    font-weight: normal;
+}
+
+.text-white {
+    color: #fff!important
+}
+
+.user-block {
+    cursor: initial
+}
+.user-block > .user-block-picture {
+    width: 96px;
+    height: 96px;
+}
+
+
+.f-password {
+    color: #06c
+}
+
+#aBack {
+    cursor: pointer
+}
+
+#frmLogin {
+    margin-top: 15px;
+    margin-left: 23px;
+    float:left; 
+    width: 290px;
+    height: 90px
+}
+
+#frmSenha {
+    margin-left: 43px;
+    float:left;
+    width: 290px;
+    height: 150px
+}
+
+#ScrollLogin {
+    overflow:hidden
+}
+
+#panel {
+    height:351px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -197px;
+    width: 360px;
+    box-shadow: 0px 0px 10px #888;
+    border-radius: 5px 5px 0 0;
+
+}
+
+#subPanel {
+    background: rgba(255, 255, 255, 0.85);
+    height: 275px;
+    border: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow:unset
+}
+
+#logo {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 5px 5px 0 0;
+}
+
+.logoImg {
+    background: url(/Content/Images/neoEscola.png) center center no-repeat;
+    background-size: 128px;background-repeat: no-repeat;
+    height: 75px;
+    text-indent:-50000px;
+    margin:0
+}
+
+.forgot-remember {
+    margin-top: 10px
+}

@@ -7,7 +7,6 @@ namespace Intcom.Domain.Entities
         public Company()
         {
             Users = new List<User>();
-            Files = new List<MyFile>();
         }
 
         public int Id    { get; set; }
@@ -15,6 +14,5 @@ namespace Intcom.Domain.Entities
         public long Limit { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
-        public virtual ICollection<MyFile> Files { get; set; }
     }
 }

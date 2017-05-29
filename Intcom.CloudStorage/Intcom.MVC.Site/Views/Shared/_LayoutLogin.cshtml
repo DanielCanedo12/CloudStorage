@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neo Escola@(ViewBag.Title != "" && ViewBag.Title != null ? " - " + ViewBag.Title : "")</title>
+    @* =============== VENDOR STYLES =============== *@
+    @Styles.Render("~/bundles/fontawesome")
+    @Styles.Render("~/bundles/simpleLineIcons")
+    @Styles.Render("~/bundles/animatecss")
+    @Styles.Render("~/Content/whirl")
+    @* =============== PAGE VENDOR STYLES =============== *@
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+    @* =============== BOOTSTRAP STYLES =============== *@
+    @Styles.Render("~/Content/bootstrap")
+
+    @* =============== APP STYLES =============== *@
+    @Styles.Render("~/Content/appCss")
+
+     <script type="text/javascript">
+         @*
+            Objeto JS que agrupa variaveis globais e funções simples do sistema
+        *@
+         FO = {
+             GLOBAL_VARS: {},
+             GLOBAL_URLS: {},
+             GLOBAL_FUNCS: {}
+         }
+     </script>
+</head>
+<body>
+    @RenderBody()
+
+    @* =============== VENDOR SCRIPTS =============== *@
+    @Scripts.Render("~/Scripts/jquery")
+    @Scripts.Render("~/Scripts/jquery-storage")
+    @Scripts.Render("~/Scripts/bootstrap")
+
+    @* =============== PAGE VENDOR SCRIPTS =============== *@
+    @RenderSection("scripts", required: false)
+
+    @* =============== APP SCRIPTS =============== *@
+    @Scripts.Render("~/Scripts/Site")
+</body>
+</html>

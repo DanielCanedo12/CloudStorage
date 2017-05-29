@@ -13,7 +13,7 @@ namespace Intcom.Infra.Data.Contexts
 
         public DbSet<User> Users { get; set; }
         public DbSet<Company> Companies { get; set; }
-        public DbSet<MyFile> Files { get; set; }
+        public DbSet<Document> Files { get; set; }
 
 
         public DefaultContext() : 
@@ -28,7 +28,7 @@ namespace Intcom.Infra.Data.Contexts
 
             modelBuilder.Configurations.Add(new UserConfig());
             modelBuilder.Configurations.Add(new CompanyConfig());
-            modelBuilder.Configurations.Add(new MyFileConfig());
+            modelBuilder.Configurations.Add(new DocumentConfig());
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
