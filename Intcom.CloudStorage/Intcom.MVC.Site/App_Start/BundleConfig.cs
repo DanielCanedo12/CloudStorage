@@ -31,8 +31,8 @@ namespace Intcom.MVC.Site
                 "~/Scripts/app/Modules/toggle-state.js"
             ));
 
-            bundles.Add(new StyleBundle("~/Content/appCss").Include(
-                "~/Content/app/css/app.css",
+            bundles.Add(new StyleBundle("~/Content/app").Include(
+                "~/Content/app.css",
                 "~/Content/mvc-override.css"
             ));
 

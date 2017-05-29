@@ -143,34 +143,221 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\_GlobalController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\app.css" />
+    <Content Include="Content\app\css\app.css" />
+    <Content Include="Content\delete.gif" />
+    <Content Include="Content\fullcalendar\fullcalendar.min.css" />
+    <Content Include="Content\fullcalendar\fullcalendar.print.css" />
+    <Content Include="Content\Images\cancel-off.png" />
+    <Content Include="Content\Images\cancel-on.png" />
+    <Content Include="Content\Images\chosen\chosen-sprite%402x.png" />
+    <Content Include="Content\Images\chosen\chosen-sprite.png" />
+    <Content Include="Content\Images\datatables\sort_asc.png" />
+    <Content Include="Content\Images\datatables\sort_asc_disabled.png" />
+    <Content Include="Content\Images\datatables\sort_both.png" />
+    <Content Include="Content\Images\datatables\sort_desc.png" />
+    <Content Include="Content\Images\datatables\sort_desc_disabled.png" />
+    <Content Include="Content\Images\img_capa.png" />
+    <Content Include="Content\Images\img_pessoa.png" />
+    <Content Include="Content\Images\login\bglogin.jpg" />
+    <Content Include="Content\Images\login\clear-day.jpg" />
+    <Content Include="Content\Images\login\clear-night.jpg" />
+    <Content Include="Content\Images\login\cloudy-day.jpg" />
+    <Content Include="Content\Images\login\cloudy-night.jpg" />
+    <Content Include="Content\Images\login\fog.jpg" />
+    <Content Include="Content\Images\login\rain-day.jpg" />
+    <Content Include="Content\Images\login\rain-night.jpg" />
+    <Content Include="Content\Images\logo_fo.png" />
+    <Content Include="Content\Images\logo_fo_full.png" />
+    <Content Include="Content\Images\logo_fo_full_mini.png" />
+    <Content Include="Content\Images\logo_fo_full_white.png" />
+    <Content Include="Content\Images\logo_fo_full_white_mini.png" />
+    <Content Include="Content\Images\logo_neoescola.png" />
+    <Content Include="Content\Images\logo_neoescola_.png" />
+    <Content Include="Content\Images\neoescola.png" />
+    <Content Include="Content\Images\neoescola_.png" />
+    <Content Include="Content\Images\rateit\delete.gif" />
+    <Content Include="Content\Images\rateit\star.gif" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\login.css" />
+    <Content Include="Content\mvc-override.css" />
+    <Content Include="Content\star.gif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\app\app.init.js" />
+    <Content Include="Scripts\app\grids\campanhas.js" />
+    <Content Include="Scripts\app\modules\associar-pessoa.js" />
+    <Content Include="Scripts\app\modules\autocomplete.js" />
+    <Content Include="Scripts\app\modules\busca-cep.js" />
+    <Content Include="Scripts\app\modules\clear-storage.js" />
+    <Content Include="Scripts\app\modules\constants.js" />
+    <Content Include="Scripts\app\modules\grid.js" />
+    <Content Include="Scripts\app\modules\notify.js" />
+    <Content Include="Scripts\app\modules\recuperar-senha.js" />
+    <Content Include="Scripts\app\modules\sendform.js" />
+    <Content Include="Scripts\app\modules\sidebar.js" />
+    <Content Include="Scripts\app\modules\skycons.js" />
+    <Content Include="Scripts\app\modules\toggle-state.js" />
+    <Content Include="Scripts\app\pages\alocar-aluno.js" />
+    <Content Include="Scripts\app\pages\alunos.js" />
+    <Content Include="Scripts\app\pages\calendario.js" />
+    <Content Include="Scripts\app\pages\campanha.js" />
+    <Content Include="Scripts\app\pages\configuracoes.js" />
+    <Content Include="Scripts\app\pages\criar-usuario.js" />
+    <Content Include="Scripts\app\pages\home.js" />
+    <Content Include="Scripts\app\pages\instituicoes.js" />
+    <Content Include="Scripts\app\pages\login.js" />
+    <Content Include="Scripts\app\pages\prematricula.js" />
+    <Content Include="Scripts\app\pages\presenca.js" />
+    <Content Include="Scripts\app\pages\profile.adm.js" />
+    <Content Include="Scripts\app\pages\profile.js" />
+    <Content Include="Scripts\app\pages\turmas.js" />
+    <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.3.js" />
+    <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.0.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Vendor\animate.css\animate.min.css" />
+    <Content Include="Vendor\blueimp-canvas-to-blob\js\canvas-to-blob.js" />
+    <Content Include="Vendor\blueimp-file-upload\css\jquery.fileupload.css" />
+    <Content Include="Vendor\blueimp-file-upload\img\loading.gif" />
+    <Content Include="Vendor\blueimp-file-upload\img\progressbar.gif" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-angular.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-audio.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-image.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-jquery-ui.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-process.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-ui.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-validate.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload-video.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.fileupload.js" />
+    <Content Include="Vendor\blueimp-file-upload\js\jquery.iframe-transport.js" />
+    <Content Include="Vendor\blueimp-load-image\js\load-image.all.min.js" />
+    <Content Include="Vendor\blueimp-tmpl\js\tmpl.js" />
+    <Content Include="Vendor\bootstrap-tagsinput\dist\bootstrap-tagsinput.css" />
+    <Content Include="Vendor\bootstrap-tagsinput\dist\bootstrap-tagsinput.min.js" />
+    <Content Include="Vendor\chosen\chosen-sprite%402x.png" />
+    <Content Include="Vendor\chosen\chosen-sprite.png" />
+    <Content Include="Vendor\chosen\chosen.min.css" />
+    <Content Include="Vendor\chosen\chosen.min.js" />
+    <Content Include="Vendor\croppie-master\croppie.css" />
+    <Content Include="Vendor\croppie-master\croppie.min.js" />
+    <Content Include="Vendor\datatables\datatables.min.css" />
+    <Content Include="Vendor\datatables\datatables.min.js" />
+    <Content Include="Vendor\date\build\core.js" />
+    <Content Include="Vendor\date\build\date-pt-BR.js" />
+    <Content Include="Vendor\date\build\date.js" />
+    <Content Include="Vendor\eonasdan-bootstrap-datetimepicker\build\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Vendor\eonasdan-bootstrap-datetimepicker\build\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Vendor\flex-text\flex-text.css" />
+    <Content Include="Vendor\flex-text\flex-text.min.js" />
+    <Content Include="Vendor\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Vendor\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Vendor\fullcalendar\dist\fullcalendar.css" />
+    <Content Include="Vendor\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="Vendor\fullcalendar\dist\gcal.js" />
+    <Content Include="Vendor\fullcalendar\dist\lang-all.js" />
+    <Content Include="Vendor\jQuery-Storage-API\jquery.storageapi.js" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\animated-overlay.gif" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\jquery-ui.css" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\jquery-ui.min.css" />
+    <Content Include="Vendor\jquery-ui\themes\smoothness\theme.css" />
+    <Content Include="Vendor\jquery-ui\ui\accordion.js" />
+    <Content Include="Vendor\jquery-ui\ui\autocomplete.js" />
+    <Content Include="Vendor\jquery-ui\ui\button.js" />
+    <Content Include="Vendor\jquery-ui\ui\core.js" />
+    <Content Include="Vendor\jquery-ui\ui\datepicker.js" />
+    <Content Include="Vendor\jquery-ui\ui\dialog.js" />
+    <Content Include="Vendor\jquery-ui\ui\draggable.js" />
+    <Content Include="Vendor\jquery-ui\ui\droppable.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-blind.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-bounce.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-clip.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-drop.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-explode.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-fade.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-fold.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-highlight.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-puff.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-pulsate.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-scale.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-shake.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-size.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-slide.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect-transfer.js" />
+    <Content Include="Vendor\jquery-ui\ui\effect.js" />
+    <Content Include="Vendor\jquery-ui\ui\menu.js" />
+    <Content Include="Vendor\jquery-ui\ui\mouse.js" />
+    <Content Include="Vendor\jquery-ui\ui\position.js" />
+    <Content Include="Vendor\jquery-ui\ui\progressbar.js" />
+    <Content Include="Vendor\jquery-ui\ui\resizable.js" />
+    <Content Include="Vendor\jquery-ui\ui\selectable.js" />
+    <Content Include="Vendor\jquery-ui\ui\selectmenu.js" />
+    <Content Include="Vendor\jquery-ui\ui\slider.js" />
+    <Content Include="Vendor\jquery-ui\ui\sortable.js" />
+    <Content Include="Vendor\jquery-ui\ui\spinner.js" />
+    <Content Include="Vendor\jquery-ui\ui\tabs.js" />
+    <Content Include="Vendor\jquery-ui\ui\tooltip.js" />
+    <Content Include="Vendor\jquery-ui\ui\widget.js" />
+    <None Include="Vendor\jquery-validation\dist\jquery.validate-vsdoc.js" />
+    <Content Include="Vendor\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="Vendor\jquery-validation\dist\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Vendor\jquery.inputmask\dist\jquery.inputmask.bundle.js" />
+    <Content Include="Vendor\jquery.rateit\delete.gif" />
+    <Content Include="Vendor\jquery.rateit\jquery.rateit.min.js" />
+    <Content Include="Vendor\jquery.rateit\rateit.css" />
+    <Content Include="Vendor\jquery.rateit\star-half.png" />
+    <Content Include="Vendor\jquery.rateit\star-off.png" />
+    <Content Include="Vendor\jquery.rateit\star-on.png" />
+    <Content Include="Vendor\jquery.rateit\star.gif" />
+    <Content Include="Vendor\jquery.rateit\star.png" />
+    <Content Include="Vendor\jquery.rateit\star_off.png" />
+    <Content Include="Vendor\jquery.steps\build\jquery.steps.js" />
+    <Content Include="Vendor\moment\min\moment-with-locales.min.js" />
+    <Content Include="Vendor\seiyria-bootstrap-slider\dist\bootstrap-slider.min.js" />
+    <Content Include="Vendor\seiyria-bootstrap-slider\dist\css\bootstrap-slider.min.css" />
+    <Content Include="Vendor\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Vendor\simple-weather\js\jquery.simpleWeather.min.js" />
+    <Content Include="Vendor\sparkline\index.js" />
+    <Content Include="Vendor\sweetalert\dist\sweetalert.css" />
+    <Content Include="Vendor\sweetalert\dist\sweetalert.min.js" />
+    <Content Include="Vendor\tinysort\jquery.tinysort.min.js" />
+    <Content Include="Vendor\tinysort\tinysort.min.js" />
+    <Content Include="Vendor\whirl\dist\whirl.min.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -185,10 +372,25 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Vendor\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Vendor\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Vendor\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Vendor\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Vendor\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Vendor\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Error\Forbidden.cshtml" />
+    <Content Include="Views\Error\InternalError.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Vendor\blueimp-file-upload\js\cors\" />
+    <Folder Include="Vendor\blueimp-file-upload\js\vendor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -203,7 +405,21 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\jquery-2.2.3.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Intcom.Application\Intcom.Application.csproj">
+      <Project>{684f8234-6a7c-49f8-88ba-4075f180b5d4}</Project>
+      <Name>Intcom.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Intcom.CrossCutting.MVCFilters\Intcom.CrossCutting.MVCFilters.csproj">
+      <Project>{404DA6D7-8A3D-4D59-996C-4F046AB41FA8}</Project>
+      <Name>Intcom.CrossCutting.MVCFilters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Intcom.Domain\Intcom.Domain.csproj">
+      <Project>{30ec1568-ab43-4bba-b9f8-fd01bc360c63}</Project>
+      <Name>Intcom.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Intcom.MVC.Site.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : _GlobalController
     {
         public ActionResult Index()
         {

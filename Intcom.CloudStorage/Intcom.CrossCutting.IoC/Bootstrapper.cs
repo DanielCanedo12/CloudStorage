@@ -3,6 +3,7 @@ using Intcom.Infra.Data.Contexts;
 using IntCom.Infra.Data.Interfaces;
 using IntCom.Infra.Data.Repositories;
 using IntCom.Infra.Data.UoW;
+using IntCom.Services.AzureStorageService;
 using SimpleInjector;
 
 namespace Intcom.CrossCutting.IoC
@@ -15,6 +16,8 @@ namespace Intcom.CrossCutting.IoC
             // Lifestyle.Singleton => Uma instancia unica para a classe
             // Lifestyle.Scoped => Uma instancia unica para o request
 
+            //Servives
+            container.Register<IStorageServiceBase, AzureManager>(Lifestyle.Singleton);
 
             // Infra Dados
             container.Register<IUserRepository, UserRepository>(Lifestyle.Scoped);

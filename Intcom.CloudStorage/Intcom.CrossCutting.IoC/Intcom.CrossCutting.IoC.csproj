@@ -86,6 +86,10 @@
       <Project>{04a0391f-dde0-4160-96c1-ae79c7b394fb}</Project>
       <Name>Intcom.Infra.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IntCom.Services.AzureStorageService\IntCom.Services.AzureStorageService.csproj">
+      <Project>{A3099646-7B26-4D64-8B45-D512F688D2F1}</Project>
+      <Name>IntCom.Services.AzureStorageService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

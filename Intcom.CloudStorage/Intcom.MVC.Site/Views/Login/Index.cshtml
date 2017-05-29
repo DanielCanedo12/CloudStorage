@@ -1,4 +1,4 @@
-﻿@model FrequenciaOnline.MVC.Secure.ViewModels.LoginViewModel
+﻿@model  Intcom.Application.ViewModels.LoginViewModel
 @{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_LayoutLogin.cshtml";
@@ -37,7 +37,7 @@
 
             <div id="ScrollLogin">
                 <div style="width:667px">
-                    <form id="frmLogin" action="@Url.Action("Email", "Login")" method="post">
+                    <form id="frmLogin" action="" method="post">
                         @Html.AntiForgeryToken()
                         <div class="form-group has-feedback">
                             @Html.TextBoxFor(model => model.User, new { @class = "form-control", placeholder = "E-mail" , id = "iptEmail" })
@@ -76,4 +76,4 @@
         </div>
     </div>
 </div>
-@Html.Partial("~/Views/Shared/Modals/RecuperaSenha.cshtml")
+@*Html.Partial("~/Views/Shared/Modals/RecuperaSenha.cshtml")*@

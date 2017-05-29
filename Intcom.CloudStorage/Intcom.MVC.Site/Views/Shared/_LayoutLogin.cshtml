@@ -9,19 +9,20 @@
     @Styles.Render("~/bundles/simpleLineIcons")
     @Styles.Render("~/bundles/animatecss")
     @Styles.Render("~/Content/whirl")
+   
     @* =============== PAGE VENDOR STYLES =============== *@
     @if (IsSectionDefined("Styles"))
     {@RenderSection("Styles", required: false)}
     @* =============== BOOTSTRAP STYLES =============== *@
     @Styles.Render("~/Content/bootstrap")
-
+    @Styles.Render("~/Content/app")
     @* =============== APP STYLES =============== *@
-    @Styles.Render("~/Content/appCss")
+    
 
-     <script type="text/javascript">
-         @*
-            Objeto JS que agrupa variaveis globais e funções simples do sistema
-        *@
+    <script type="text/javascript">
+        @*
+           Objeto JS que agrupa variaveis globais e funções simples do sistema
+    *@
          FO = {
              GLOBAL_VARS: {},
              GLOBAL_URLS: {},
